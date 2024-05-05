@@ -1,0 +1,406 @@
+.desktop {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.desktop-sizing {
+  width: 80%;
+}
+.mobile-sizing {
+  width: 95%;
+}
+/***************/
+.flex-box {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+.flex-box-sp {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.flex-box-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.flex-box-cc {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+/************************/
+.norm-text {
+  font-family: 'Open Sans', sans-serif;
+  color: #2e2d2d;
+  font-size: 1.1rem;
+  font-weight: 400;
+}
+.bold-text {
+  font-family: 'Open Sans', sans-serif;
+  color: #2e2d2d;
+  font-size: 1.1rem;
+  font-weight: 400;
+  font-weight: 900;
+}
+.norm-text-little {
+  font-family: 'Open Sans', sans-serif;
+  color: #2e2d2d;
+  font-size: 1.1rem;
+  font-weight: 400;
+  font-size: 1rem;
+}
+.title {
+  font-family: 'Open Sans', sans-serif;
+  color: #1f1f1f;
+  font-size: 6rem;
+  line-height: 6rem;
+  font-weight: 700;
+  text-transform: capitalize;
+}
+/****************************/
+.button {
+  font-family: 'Open Sans', sans-serif;
+  color: #2e2d2d;
+  font-size: 1.1rem;
+  font-weight: 400;
+  font-weight: 900;
+  font-size: 1.2rem;
+  padding: 2.5% 8%;
+  border-radius: 4rem;
+  outline: none;
+  border: none;
+  transition: 0.5s linear;
+}
+.button:hover {
+  background-color: #252525;
+  color: #ffffff;
+}
+.title-maket h2 {
+  font-family: 'Open Sans', sans-serif;
+  color: #1f1f1f;
+  font-weight: 800;
+  font-size: 2.5rem;
+  line-height: 2.6rem;
+  text-transform: capitalize;
+  width: 100%;
+}
+.title-maket h2 span {
+  color: #16e816;
+}
+.title-maket p {
+  font-family: 'Open Sans', sans-serif;
+  color: #2a2b2a;
+  font-weight: 500;
+  font-size: 1.25rem;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+ul,
+ol {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+}
+img {
+  width: 100%;
+}
+nav {
+  min-height: 28vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+nav .nav-overlay {
+  min-height: 10vh;
+  width: 80%;
+}
+nav .nav-overlay .top-nav {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+nav .nav-overlay .top-nav img {
+  width: 15%;
+}
+nav .nav-overlay .bottom-nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 2rem;
+}
+nav .nav-overlay .bottom-nav ul {
+  width: 70%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+nav .nav-overlay .bottom-nav ul > :first-child > a {
+  color: #33f033;
+}
+nav .nav-overlay .bottom-nav ul a {
+  transition: 0.2s linear;
+  font-family: 'Open Sans', sans-serif;
+  color: #2e2d2d;
+  font-size: 1.1rem;
+  font-weight: 400;
+  text-transform: uppercase;
+}
+nav .nav-overlay .bottom-nav ul a:focus {
+  color: #33f033;
+}
+nav .nav-overlay .bottom-nav ul a:hover {
+  color: #33f033;
+}
+nav .nav-overlay .burger-nav {
+  display: none;
+}
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  nav .nav-overlay {
+    min-height: 10vh;
+  }
+  nav .nav-overlay .top-nav img {
+    width: 25%;
+  }
+  nav .nav-overlay .bottom-nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 1.5rem;
+  }
+  nav .nav-overlay .bottom-nav ul {
+    width: 85%;
+  }
+  nav .nav-overlay .bottom-nav ul a {
+    font-family: 'Open Sans', sans-serif;
+    color: #2e2d2d;
+    font-size: 1.1rem;
+    font-weight: 400;
+    font-size: 1rem;
+  }
+}
+@media screen and (min-width: 320px) and (max-width: 768px) {
+  nav {
+    min-height: 15vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  nav .nav-overlay {
+    width: 95%;
+    min-height: 8vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  nav .nav-overlay .top-nav {
+    justify-content: flex-start;
+  }
+  nav .nav-overlay .top-nav img {
+    width: 23%;
+    max-width: 30%;
+  }
+  nav .nav-overlay .bottom-nav {
+    display: none;
+  }
+  nav .nav-overlay .burger-nav {
+    display: block;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
+header {
+  background-image: url("../assets/header/banner1.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  min-height: 110vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  align-items: end;
+  position: relative;
+}
+header .header-overlay {
+  width: 55%;
+}
+header .header-overlay h1 {
+  font-family: 'Open Sans', sans-serif;
+  color: #1f1f1f;
+  font-size: 6rem;
+  line-height: 6rem;
+  font-weight: 700;
+  text-transform: capitalize;
+  margin-bottom: 0.5rem;
+}
+header .header-overlay p {
+  font-family: 'Open Sans', sans-serif;
+  color: #2e2d2d;
+  font-size: 1.1rem;
+  font-weight: 400;
+  font-weight: 900;
+  color: #ffffff;
+  margin-bottom: 2.5rem;
+}
+header .header-overlay button {
+  font-family: 'Open Sans', sans-serif;
+  color: #2e2d2d;
+  font-size: 1.1rem;
+  font-weight: 400;
+  font-weight: 900;
+  font-size: 1.2rem;
+  padding: 2.5% 8%;
+  border-radius: 4rem;
+  outline: none;
+  border: none;
+  transition: 0.5s linear;
+  text-transform: uppercase;
+}
+header .header-overlay button:hover {
+  background-color: #252525;
+  color: #ffffff;
+}
+header .buttons {
+  position: absolute;
+  bottom: -1rem;
+  left: 45%;
+}
+header .buttons button {
+  background-color: #ffffff;
+  padding: 0.8rem 1.1rem;
+  border-radius: 50%;
+  border: none;
+  outline: none;
+  background-color: #252525;
+}
+header .buttons button i {
+  color: #ffffff;
+}
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  header {
+    background-image: url("../assets/header/banner1.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    align-items: end;
+  }
+  header .header-overlay {
+    width: 60%;
+  }
+  header .header-overlay h1 {
+    font-family: 'Open Sans', sans-serif;
+    color: #1f1f1f;
+    font-size: 6rem;
+    line-height: 6rem;
+    font-weight: 700;
+    text-transform: capitalize;
+    font-size: 4rem;
+    line-height: 4rem;
+  }
+  header .header-overlay p {
+    font-family: 'Open Sans', sans-serif;
+    color: #2e2d2d;
+    font-size: 1.1rem;
+    font-weight: 400;
+    font-weight: 900;
+    color: #ffffff;
+    margin-bottom: 2.5rem;
+  }
+  header .header-overlay button {
+    font-family: 'Open Sans', sans-serif;
+    color: #2e2d2d;
+    font-size: 1.1rem;
+    font-weight: 400;
+    font-weight: 900;
+    font-size: 1.2rem;
+    padding: 2.5% 8%;
+    border-radius: 4rem;
+    outline: none;
+    border: none;
+    transition: 0.5s linear;
+    text-transform: uppercase;
+  }
+  header .header-overlay button:hover {
+    background-color: #252525;
+    color: #ffffff;
+  }
+}
+@media screen and (min-width: 320px) and (max-width: 768px) {
+  header {
+    background-image: url("../assets/header/banner1.jpg");
+    background-repeat: no-repeat;
+    background-position: left;
+    background-size: cover;
+    min-height: 85vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  header .header-overlay {
+    padding-left: 2rem;
+    width: 60%;
+  }
+  header .header-overlay h1 {
+    font-family: 'Open Sans', sans-serif;
+    color: #1f1f1f;
+    font-size: 6rem;
+    line-height: 6rem;
+    font-weight: 700;
+    text-transform: capitalize;
+    font-size: 4rem;
+    line-height: 4rem;
+  }
+  header .header-overlay p {
+    font-family: 'Open Sans', sans-serif;
+    color: #2e2d2d;
+    font-size: 1.1rem;
+    font-weight: 400;
+    font-weight: 900;
+    color: #ffffff;
+    margin-bottom: 2.5rem;
+  }
+  header .header-overlay button {
+    font-family: 'Open Sans', sans-serif;
+    color: #2e2d2d;
+    font-size: 1.1rem;
+    font-weight: 400;
+    font-weight: 900;
+    font-size: 1.2rem;
+    padding: 2.5% 8%;
+    border-radius: 4rem;
+    outline: none;
+    border: none;
+    transition: 0.5s linear;
+    text-transform: uppercase;
+  }
+  header .header-overlay button:hover {
+    background-color: #252525;
+    color: #ffffff;
+  }
+}
