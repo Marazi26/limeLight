@@ -1,0 +1,98 @@
+@import "variables.less";
+
+.desktop {
+    min-height: 100vh;
+    .flex-box-cc();
+}
+
+.desktop-sizing {
+    width: 80%;
+}
+
+.mobile-sizing {
+    width: 95%;
+}
+
+/***************/
+.flex-box {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.flex-box-sp {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.flex-box-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.flex-box-cc {
+    .flex-box-center();
+    flex-direction: column;
+}
+
+/************************/
+.norm-text {
+    font-family: @ff;
+    color: @text-black;
+    font-size: 1.1rem;
+    font-weight: 400;
+}
+.bold-text{
+    .norm-text();
+    font-weight: 900;
+}
+.norm-text-little{
+    .norm-text();
+    font-size: 1rem;
+}
+.title{
+        font-family: @ff;
+        color: @title-black;
+        font-size: 6rem;
+        line-height: 6rem;
+        font-weight: 700;
+        text-transform: capitalize;
+}
+/****************************/
+.button{
+    .bold-text();
+    font-size: 1.2rem;
+    padding: 2.5% 8%;
+    border-radius: 4rem;
+    outline: none;
+    border: none;
+    transition: .5s linear;
+    &:hover{
+        background-color: @button-bg-black;
+        color:@white;
+    }
+}
+.title-maket {
+    h2 {
+        font-family: @ff;
+        color: @title-black;
+        font-weight: 800;
+        font-size: 2.5rem;
+        line-height: 2.6rem;
+        text-transform: capitalize;
+        width: 100%;
+
+        span {
+            color: @bold-green;
+        }
+    }
+
+    p {
+        font-family: @ff;
+        color: @card-bg-black;
+        font-weight: 500;
+        font-size: 1.25rem;
+    }
+}

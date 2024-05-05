@@ -1,1 +1,223 @@
 @import "variables.less";
+@import "mixin.less";
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+ul,
+ol {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+img {
+    width: 100%;
+}
+
+nav {
+    min-height: 28vh;
+    .flex-box-cc();
+
+    .nav-overlay {
+        min-height: 10vh;
+
+        .desktop-sizing();
+
+        .top-nav {
+            width: 100%;
+            .flex-box-center();
+
+            img {
+                width: 15%;
+            }
+        }
+
+        .bottom-nav {
+            .flex-box-center();
+            margin-top: 2rem;
+
+            ul {
+                width: 70%;
+                .flex-box-sp();
+                & > :first-child > a{
+                    color: @green;
+                }
+                a {
+                    transition: .2s linear;
+                    .norm-text();
+                    text-transform: uppercase;
+                    &:focus{
+                        color: @green;
+                    }
+                    &:hover{
+                        color: @green;
+                    }
+                }
+            }
+        }
+
+        .burger-nav {
+            display: none;
+        }
+    }
+
+    @media screen and (min-width:768px) and (max-width:1024px){
+        .flex-box-cc();
+    
+        .nav-overlay {
+            min-height: 10vh;
+
+            .top-nav {
+                img {
+                    width: 25%;
+                }
+            }
+    
+            .bottom-nav {
+                .flex-box-center();
+                margin-top: 1.5rem;
+    
+                ul {
+                    width: 85%;
+                    a {
+                        .norm-text-little();
+                    }
+                }
+            }
+        }
+    }
+
+    @media screen and (min-width:320px) and (max-width:768px){
+        min-height: 15vh;
+        .flex-box-cc();
+        .nav-overlay {
+            .mobile-sizing();
+            min-height: 8vh;
+            .flex-box-sp();
+
+            .top-nav {
+                justify-content: flex-start;
+                img {
+                    width: 23%;
+                    max-width: 30%;
+                }
+            }
+    
+            .bottom-nav {
+                display: none;
+            }
+
+            .burger-nav{
+                display: block;
+                .flex-box-center();
+            }
+        }
+    }
+}
+
+header{
+    background-image: url("../assets/header/banner1.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    min-height: 110vh;
+    .flex-box-cc();
+    align-items: end;
+
+    position: relative;
+    .header-overlay{
+        width: 55%;
+        h1{
+            .title();
+            margin-bottom: .5rem;
+        }
+        p{
+            .bold-text();
+            color: @white;
+            margin-bottom: 2.5rem;
+        }
+        button{
+            .button();
+            text-transform: uppercase;
+        }
+    }
+
+    .buttons{
+        position: absolute;
+        bottom: -1rem;
+        left: 45%;
+
+        button{
+            background-color: @white;
+            padding: .8rem 1.1rem;
+            border-radius: 50%;
+            border: none;
+            outline: none;
+            background-color: @button-bg-black;
+            i{
+                color: @white;
+            }
+        }
+    }
+
+    @media screen and (min-width:768px) and (max-width:1024px) {
+        background-image: url("../assets/header/banner1.jpg");
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        min-height: 100vh;
+        .flex-box-cc();
+        align-items: end;
+        .header-overlay{
+            width: 60%;
+            h1{
+                .title();
+                font-size: 4rem;
+                line-height: 4rem;
+            }
+            p{
+                .bold-text();
+                color: @white;
+                margin-bottom: 2.5rem;
+            }
+            button{
+                .button();
+                text-transform: uppercase;
+            }
+        }
+    }
+
+    @media screen and (min-width:320px) and (max-width:768px) {
+        background-image: url("../assets/header/banner1.jpg");
+        background-repeat: no-repeat;
+        background-position: left;
+        background-size: cover;
+        min-height: 85vh;
+        .flex-box-cc();
+        align-items:flex-start;
+        .header-overlay{
+            padding-left: 2rem;
+            width: 60%;
+            h1{
+                .title();
+                font-size: 4rem;
+                line-height: 4rem;
+            }
+            p{
+                .bold-text();
+                color: @white;
+                margin-bottom: 2.5rem;
+            }
+            button{
+                .button();
+                text-transform: uppercase;
+            }
+        }
+    }
+}
