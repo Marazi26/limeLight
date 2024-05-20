@@ -213,6 +213,7 @@ a {
 img {
   width: 100%;
 }
+/*** NAV **************************************************/
 nav {
   min-height: 28vh;
   display: flex;
@@ -328,6 +329,7 @@ nav .nav-overlay .burger-nav {
     align-items: center;
   }
 }
+/*** HEADER **************************************************/
 header {
   background-image: url("../assets/header/banner1.jpg");
   background-repeat: no-repeat;
@@ -504,6 +506,7 @@ header .buttons button i {
     color: #ffffff;
   }
 }
+/*** ABOUT **************************************************/
 .about {
   min-height: 100vh;
   display: flex;
@@ -721,6 +724,7 @@ header .buttons button i {
     width: 100%;
   }
 }
+/*** SERVICE **************************************************/
 .service {
   min-height: 100vh;
   display: flex;
@@ -1285,6 +1289,7 @@ header .buttons button i {
     color: #ffffff;
   }
 }
+/*** GALLERY **************************************************/
 .gallery {
   min-height: 100vh;
   display: flex;
@@ -1293,6 +1298,7 @@ header .buttons button i {
   flex-direction: column;
   background-color: #eae7e7;
   margin-top: 2rem;
+  overflow-y: hidden;
 }
 .gallery .gallery-overlay {
   margin-top: 2rem;
@@ -1567,6 +1573,7 @@ header .buttons button i {
     margin-top: 1rem;
   }
 }
+/*** DESIGN **************************************************/
 .design {
   min-height: 80vh;
   display: flex;
@@ -1574,6 +1581,7 @@ header .buttons button i {
   align-items: center;
   flex-direction: column;
   align-items: end;
+  overflow-x: hidden;
 }
 .design .design-overlay {
   width: 90%;
@@ -1778,6 +1786,7 @@ header .buttons button i {
     width: 100%;
   }
 }
+/*** BLOG **************************************************/
 .blog {
   min-height: 100vh;
   display: flex;
@@ -2224,9 +2233,9 @@ header .buttons button i {
     background-color: #252525;
   }
   .blog .blog-overlay .blog-cards .blog-card .blog-info {
-    max-width: 80%;
+    max-width: 70%;
     height: unset;
-    min-height: 70vh;
+    min-height: 62vh;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -2322,6 +2331,7 @@ header .buttons button i {
     width: 100%;
   }
 }
+/*** TESTIMONIAL **************************************************/
 .testimonial {
   min-height: 100vh;
   display: flex;
@@ -2425,7 +2435,7 @@ header .buttons button i {
 }
 @media screen and (min-width: 768px) and (max-width: 1024px) {
   .testimonial {
-    min-height: 83vh;
+    min-height: 55vh;
     align-items: flex-start;
   }
   .testimonial .testimonial-overlay {
@@ -2438,7 +2448,7 @@ header .buttons button i {
     margin: unset;
   }
   .testimonial .testimonial-overlay .testimonial-cards {
-    width: 59%;
+    min-height: 50vh;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -2576,6 +2586,7 @@ header .buttons button i {
     padding-right: 0;
   }
 }
+/*** CONTACT **************************************************/
 .contact {
   min-height: 100vh;
   display: flex;
@@ -2586,6 +2597,7 @@ header .buttons button i {
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
+  overflow-y: hidden;
 }
 .contact .contact-overlay {
   width: 82%;
@@ -2700,6 +2712,9 @@ header .buttons button i {
   height: 57vh;
 }
 @media screen and (min-width: 768px) and (max-width: 1024px) {
+  .contact {
+    min-height: 70vh;
+  }
   .contact .contact-overlay {
     width: 90%;
   }
@@ -2810,7 +2825,7 @@ header .buttons button i {
   }
   .contact .contact-overlay .contact-info .contact-map #my-iframe {
     width: 100%;
-    height: 57vh;
+    height: 47vh;
   }
 }
 @media screen and (min-width: 320px) and (max-width: 768px) {
@@ -2945,6 +2960,7 @@ header .buttons button i {
     height: 50vh;
   }
 }
+/*** FOOTER **************************************************/
 footer {
   min-height: 70vh;
   display: flex;
@@ -3089,7 +3105,7 @@ footer .footer-overlay .mid-footer button:hover {
 }
 @media screen and (min-width: 768px) and (max-width: 1024px) {
   footer {
-    min-height: 82vh;
+    min-height: 60vh;
   }
   footer .footer-overlay {
     width: 82%;
